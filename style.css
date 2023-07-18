@@ -7,7 +7,6 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
-
 body{
   max-width:100%;
 
@@ -147,11 +146,11 @@ box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.25);
 font-size: 1rem;
 font-weight: 700;
 }
-.see-more>img{
+/* .see-more>img{
   width: 1.25rem;
   margin-bottom: -5px;
    color: rgba(224, 44, 109, 0.87);
-}
+} */
 /* feature section style */
 .feature{
   width: 85%;
@@ -160,9 +159,11 @@ font-weight: 700;
   justify-content: space-around;
   flex-direction: row-reverse;
   align-items: center;
-  column-gap: 90px;
+  column-gap: 60px;
+  margin-bottom: 70px;
 }
-.feature-container{}
+.feature-container{
+}
 .feature-title{
   color: #0A0826;
 font-size: 2.25rem;
@@ -184,11 +185,12 @@ margin-bottom: 30px;
   color: #FFF;
 font-size: 1rem;
 font-weight: 700;
+gap: 5px;
 }
-.join-btn>img{
+/* .join-btn>img{
   width: 1rem;
    margin-bottom: -5px;
-}
+} */
 /* footer section style */
 footer{
   display: flex;
@@ -204,24 +206,25 @@ width: 100%;
   color: #FFF;
 font-size: 1.5rem;
 font-weight: 700;
-margin-bottom:5px
+margin-bottom:18px;
+text-align: center;
 }
 .footer-container>p{
   color:#D9DBE1;
-font-size: 1rem;
+font-size: 0.8rem;
 font-weight: 700;
 margin-bottom: 15px;
+text-align: center;
 }
 .footer-container .icon{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin: auto;
-  gap:30px;
 }
-.footer-container .icon>img{
-  background: #FFF;
+.fa-brands{
+  color: #FFF;
   border-radius: 50%;
+  font-size: 1.5rem;
 }
 
 /* mobile device */
@@ -241,6 +244,12 @@ margin-bottom: 15px;
   .logo{
   margin-bottom: 30px;
 }
+.banner-img{
+  margin-bottom: 30px;
+}
+.card-section{
+  width: 80%;
+  margin: auto;
   .card-container{
     grid-template-columns: 1fr;
     margin-bottom: 20px;
@@ -250,6 +259,7 @@ margin-bottom: 15px;
   }
 
 }
+}
 /* medium device */
 @media screen and (min-width:576px) and (max-width:960px){
   .navber,.banner,.feature
@@ -257,6 +267,9 @@ margin-bottom: 15px;
     flex-direction: column;
   }
   .navber-title{margin-bottom: 20px;}
+  .banner-img{
+  margin-bottom: 30px;
+}
   .card-container{
     grid-template-columns: repeat(2,1fr);
     margin-bottom: 30px;
@@ -264,6 +277,7 @@ margin-bottom: 15px;
   .logo-section{
    display: grid;
    grid-template-columns: repeat(4,1fr);
+   align-items: center;
   }
   .see-more{
     width: 80%;
